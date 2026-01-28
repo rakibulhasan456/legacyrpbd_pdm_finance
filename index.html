@@ -79,9 +79,15 @@
 <h3>Vehicle Finance Overview</h3>
 <label>Vehicle Price</label>
 <input id="vehiclePrice" type="number">
+    
+    <label>Down Payment Percentage</label>
+<input id="downPaymentPercent" type="text" readonly>
 
 <label>Down Payment</label>
 <input id="downPayment" type="number">
+    
+    <label>Total Installment Paid</label>
+<input id="totalInstallmentPaid" type="number">
 
 <label>Remaining Payment</label>
 <input id="remainingPayment" type="number">
@@ -146,11 +152,13 @@ Finance Duration: <span id="pvFinanceDuration"></span>
     <!-- LEFT SIDE -->
     <div>
       Vehicle Price: $<span id="pvVehiclePrice"></span><br>
+        Down Payment (%): <span id="pvDownPaymentPercent"></span><br>
       Down Payment: $<span id="pvDownPayment"></span>
     </div>
 
     <!-- RIGHT SIDE -->
     <div>
+        Total Installment Paid: $<span id="pvTotalInstallmentPaid"></span><br>
       Remaining Payment: $<span id="pvRemainingPayment"></span><br>
       Last Payment Date: <span id="pvLastPaymentDate"></span>
     </div>

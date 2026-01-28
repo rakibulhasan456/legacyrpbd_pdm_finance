@@ -34,6 +34,10 @@ updatePreview.onclick = () => {
   pvFinanceDuration.textContent = financeDuration.value + " Weeks";
 
   pvVehiclePrice.textContent = formatMoney(vehiclePrice.value);
+    
+    pvDownPaymentPercent.textContent = downPaymentPercent.value;
+pvTotalInstallmentPaid.textContent = formatMoney(totalInstallmentPaid.value);
+
   pvDownPayment.textContent = formatMoney(downPayment.value);
   pvRemainingPayment.textContent = formatMoney(remainingPayment.value);
   pvLastPaymentDate.textContent = formatDate(lastPaymentDate.value || calculateLastDate());
@@ -101,3 +105,14 @@ function calculateLastDate() {
 
 agreementDate.addEventListener("change", calculateLastDate);
 financeDuration.addEventListener("change", calculateLastDate);
+
+function updateDownPaymentPercent() {
+  const weeks = parseInt(financeDuration.value);
+  if (!weeks) return;
+
+  downPaymentPercent.value = weeks === 4 ? "25%" : "35%";
+}
+
+financeDuration.addEventListener("change", updateDownPaymentPercent);
+
+updateDownPaymentPercent();
