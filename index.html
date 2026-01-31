@@ -69,22 +69,30 @@
 
 <label>Vehicle ID</label>
 <input id="vehicleId">
+    
+<label>Vehicle Price</label>
+<input id="vehiclePrice" type="number">
 
-<label>Finance Duration</label>
+    
+<h3>Vehicle Finance Overview</h3>
+    <label>Finance Duration</label>
 <select id="financeDuration">
   <option value="4">4 Weeks</option>
   <option value="6">6 Weeks</option>
 </select>
-    
-<h3>Vehicle Finance Overview</h3>
-<label>Vehicle Price</label>
-<input id="vehiclePrice" type="number">
     
     <label>Down Payment Percentage</label>
 <input id="downPaymentPercent" type="text" readonly>
 
 <label>Down Payment</label>
 <input id="downPayment" type="number">
+    
+    <label>Last Installment Paid Date</label>
+<input id="lastInstallmentPaidDate" type="date">
+
+<label>Last Installment Paid Amount</label>
+<input id="lastInstallmentPaidAmount" type="number">
+
     
     <label>Total Installment Paid</label>
 <input id="totalInstallmentPaid" type="number">
@@ -141,23 +149,26 @@ Address: <span id="pvBuyerAddress"></span>
 Vehicle Name: <span id="pvVehicleName"></span><br>
 Plate: <span id="pvVehiclePlate"></span><br>
 Vehicle ID: <span id="pvVehicleId"></span><br>
-Finance Duration: <span id="pvFinanceDuration"></span>
+    Vehicle Price: $<span id="pvVehiclePrice"></span>
+
 </div>
 </div>
 
 <div class="section">
   <div class="section-title">Vehicle Finance Overview</div>
-
+    
   <div class="grid-2 mt">
     <!-- LEFT SIDE -->
     <div>
-      Vehicle Price: $<span id="pvVehiclePrice"></span><br>
+      Finance Duration: <span id="pvFinanceDuration"></span><br>
         Down Payment (%): <span id="pvDownPaymentPercent"></span><br>
-      Down Payment: $<span id="pvDownPayment"></span>
+      Down Payment: $<span id="pvDownPayment"></span><br>
+        Last Installment Paid Date: <span id="pvLastInstallmentPaidDate"></span>
     </div>
 
     <!-- RIGHT SIDE -->
     <div>
+        Last Installment Paid Amount: $<span id="pvLastInstallmentPaidAmount"></span><br>
         Total Installment Paid: $<span id="pvTotalInstallmentPaid"></span><br>
       Remaining Payment: $<span id="pvRemainingPayment"></span><br>
       Last Payment Date: <span id="pvLastPaymentDate"></span>
@@ -179,7 +190,7 @@ Finance Duration: <span id="pvFinanceDuration"></span>
 <li><b>Failure to Complete Payment:</b> If the Buyer fails to clear the full payment within the agreed duration, a court notice will be issued. After receiving the notice, the Buyer will have an additional 1 week to clear all dues along with a late fee of $5,000.</li>
 <li><b>Vehicle Seizure:</b> Failure to clear payment after the additional 1-week period will result in permanent seizure of the vehicle by the Dealership.</li>
 <li><b>Non-Refundable Payments:</b> Any payment made is strictly non-refundable.</li>
-<li><b>Lawyer Fee:</b> A mandatory lawyer processing fee of $5,000 applies.</li>
+<li><b>Lawyer Fee:</b> The Buyer must pay a mandatory $5,000 lawyer fee for preparing this agreement.</li>
 <li><b>Vehicle Recovery:</b> If available after seizure, recovery requires a fee of $10,000 plus full outstanding balance.</li>
 <li><b>Legal Binding:</b> This Agreement is legally binding under applicable law. Any dispute arising from this Agreement shall be resolved according to applicable law.</li>
 </ul>

@@ -36,6 +36,12 @@ updatePreview.onclick = () => {
   pvVehiclePrice.textContent = formatMoney(vehiclePrice.value);
     
     pvDownPaymentPercent.textContent = downPaymentPercent.value;
+    pvLastInstallmentPaidDate.textContent =
+  formatDate(lastInstallmentPaidDate.value);
+
+pvLastInstallmentPaidAmount.textContent =
+  formatMoney(lastInstallmentPaidAmount.value);
+
 pvTotalInstallmentPaid.textContent = formatMoney(totalInstallmentPaid.value);
 
   pvDownPayment.textContent = formatMoney(downPayment.value);
