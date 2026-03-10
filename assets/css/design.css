@@ -100,7 +100,7 @@ button.ghost {
 }
 
 .statement-body {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.5;
 }
 
@@ -240,7 +240,7 @@ button.ghost {
 }
 
 .terms {
-  font-size: 34px;
+  font-size: 33px;
   line-height: 1.6;
 }
 
@@ -252,7 +252,7 @@ button.ghost {
   font-size: 34px;
   line-height: 1.7;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
   font-weight: 500;
 }
 
